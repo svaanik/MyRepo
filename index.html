@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-card">
+      <h1>Number Guessing Game</h1>
+      <p>I'm thinking of a number between <strong>1</strong> and <strong>100</strong>.</p>
+      <p id="current-range" class="range">Possible range: 1–100</p>
+
+      <form id="guess-form">
+        <label for="guess-input">Your guess</label>
+        <input
+          id="guess-input"
+          name="guess"
+          type="number"
+          min="1"
+          max="100"
+          required
+          autocomplete="off"
+        />
+        <button type="submit" id="guess-button">Guess</button>
+      </form>
+
+      <p id="feedback" role="status" aria-live="polite">
+        Enter a number to begin.
+      </p>
+      <p id="suggestion" class="suggestion">Fastest starting guess: 50</p>
+      <p id="attempts">Attempts: 0</p>
+      <p id="guess-history" class="guess-history">Guesses: none</p>
+      <button type="button" id="reset-button" hidden>Play Again</button>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: #eef4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.game-card {
+  width: min(420px, 100%);
+  padding: 32px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgb(35 55 95 / 12%);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+button {
+  min-height: 44px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbc4d4;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  border: 0;
+  padding: 10px 16px;
+  color: #ffffff;
+  background: #3659a7;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #294789;
+}
+
+button:disabled {
+  background: #8c96aa;
+  cursor: not-allowed;
+}
+
+#feedback {
+  min-height: 24px;
+  font-weight: bold;
+}
+
+#attempts {
+  color: #5a6475;
+}
+
+.range,
+.suggestion {
+  font-weight: bold;
+}
+
+.suggestion {
+  color: #3659a7;
+}
+
+.guess-history {
+  min-height: 24px;
+  color: #5a6475;
+  overflow-wrap: anywhere;
+}
